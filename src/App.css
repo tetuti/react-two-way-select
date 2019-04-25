@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +30,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav > button {
+  
+  color: white;
+  background-color: transparent;
+  border: 0.1rem solid white;
+}
+
+nav > button:hover {
+  
+  color: #282c34;
+  background-color: white;
+  border: 0.1rem solid white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 1rem;
+  outline: 0.1rem solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #282c34;
+  padding: 1rem;
+  background-color: transparent;
+  border: 0.1rem solid #282c34;
+}
+
+button:hover {
+  background-color:#282c34;
+  color: white;
+}
+
+button:disabled {
+  pointer-events: none;
+  border-color: transparent;
+  color: indianred;
+  background-color: lightcoral;
 }
